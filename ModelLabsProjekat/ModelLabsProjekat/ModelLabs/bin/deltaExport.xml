@@ -1,0 +1,133 @@
+﻿<delta id="0">
+  <operations>
+    <operation type="insert">
+      <ResourceDescriptions count="11">
+        <ResourceDescription>
+          <id gid="0x00000001ffffffff" type="DCLINESEGMENT" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="dc1" />
+            <Property id="IDOBJ_NAME" value="dc1" />
+            <Property id="IDOBJ_ALIASNAME" value="dc1" />
+            <Property id="CONDUCTOR_LENGTH" value="12.3" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000001fffffffe" type="DCLINESEGMENT" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="dc2" />
+            <Property id="IDOBJ_NAME" value="dc2" />
+            <Property id="IDOBJ_ALIASNAME" value="dc2" />
+            <Property id="CONDUCTOR_LENGTH" value="14.5" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000004ffffffff" type="PLPI" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="plpi1" />
+            <Property id="IDOBJ_NAME" value="plpi1" />
+            <Property id="IDOBJ_ALIASNAME" value="plpi1" />
+            <Property id="PLPI_CONDUCTORCOUNT" value="10" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000004fffffffe" type="PLPI" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="plpi2" />
+            <Property id="IDOBJ_NAME" value="plpi2" />
+            <Property id="IDOBJ_ALIASNAME" value="plpi2" />
+            <Property id="PLPI_CONDUCTORCOUNT" value="20" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000006ffffffff" type="PHID" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="pi1" />
+            <Property id="IDOBJ_NAME" value="pi1" />
+            <Property id="IDOBJ_ALIASNAME" value="pi1" />
+            <Property id="PHID_SUSCEPTANCEPERLENGTH" value="12.7" />
+            <Property id="PHID_RESISTANCEPERLENGTH" value="45.3" />
+            <Property id="PHID_REACTANCEPERLENGTH" value="13.342" />
+            <Property id="PHID_SEQUENCENUMBER" value="15" />
+            <Property id="PHID_PHASEIMPEDANCE" value="0x00000004ffffffff" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000002ffffffff" type="ACLINESEGMENT" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="ac1" />
+            <Property id="IDOBJ_NAME" value="ac1" />
+            <Property id="IDOBJ_ALIASNAME" value="ac1" />
+            <Property id="ACLINESEGMENT_SUSCEPTANCE0" value="24.6" />
+            <Property id="ACLINESEGMENT_SUSCPETANCE" value="30.5" />
+            <Property id="ACLINESEGMENT_RESISTANCE0" value="80.5" />
+            <Property id="ACLINESEGMENT_RESISTANCE" value="22.3" />
+            <Property id="ACLINESEGMENT_CONDUCTANCE0" value="50.7" />
+            <Property id="ACLINESEGMENT_CONDUCTANCE" value="45.2" />
+            <Property id="ACLINESEGMENT_REACTANCE" value="12.3" />
+            <Property id="ACLINESEGMENT_REACTANCE0" value="34.5" />
+            <Property id="ACLINESEGMENT_PERLENGTHIMPEDANCE" value="0x00000004ffffffff" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000002fffffffe" type="ACLINESEGMENT" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="ac2" />
+            <Property id="IDOBJ_NAME" value="ac2" />
+            <Property id="IDOBJ_ALIASNAME" value="ac2" />
+            <Property id="ACLINESEGMENT_SUSCEPTANCE0" value="49.2" />
+            <Property id="ACLINESEGMENT_SUSCPETANCE" value="37.5" />
+            <Property id="ACLINESEGMENT_RESISTANCE0" value="25.6" />
+            <Property id="ACLINESEGMENT_RESISTANCE" value="34.5" />
+            <Property id="ACLINESEGMENT_CONDUCTANCE0" value="35.6" />
+            <Property id="ACLINESEGMENT_CONDUCTANCE" value="45.2" />
+            <Property id="ACLINESEGMENT_REACTANCE" value="12.3" />
+            <Property id="ACLINESEGMENT_REACTANCE0" value="54.2" />
+            <Property id="ACLINESEGMENT_PERLENGTHIMPEDANCE" value="0x00000004fffffffe" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000007ffffffff" type="TERMINAL" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="terminal1" />
+            <Property id="IDOBJ_NAME" value="terminal1" />
+            <Property id="IDOBJ_ALIASNAME" value="terminal1" />
+            <Property id="TERMINAL_CONDUCTINGEQUIPMENT" value="0x00000001ffffffff" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000007fffffffe" type="TERMINAL" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="terminal2" />
+            <Property id="IDOBJ_NAME" value="terminal2" />
+            <Property id="IDOBJ_ALIASNAME" value="terminal2" />
+            <Property id="TERMINAL_CONDUCTINGEQUIPMENT" value="0x00000001fffffffe" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000003ffffffff" type="SERIESCOMPENSATOR" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="sc1" />
+            <Property id="IDOBJ_NAME" value="sc1" />
+            <Property id="IDOBJ_ALIASNAME" value="sc1" />
+            <Property id="SERIESCOMPENSATOR_REACTANCE" value="12.3" />
+            <Property id="SERIESCOMPENSATOR_REACTANCE0" value="15.4" />
+            <Property id="SERIESCOMPENSATOR_RESISTANCE" value="13.2" />
+            <Property id="SERIESCOMPENSATOR_RESISTANCE0" value="16.5" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000003fffffffe" type="SERIESCOMPENSATOR" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="sc2" />
+            <Property id="IDOBJ_NAME" value="sc2" />
+            <Property id="IDOBJ_ALIASNAME" value="sc2" />
+            <Property id="SERIESCOMPENSATOR_REACTANCE" value="15.6" />
+            <Property id="SERIESCOMPENSATOR_REACTANCE0" value="24.3" />
+            <Property id="SERIESCOMPENSATOR_RESISTANCE" value="27.8" />
+            <Property id="SERIESCOMPENSATOR_RESISTANCE0" value="35.6" />
+          </Properties>
+        </ResourceDescription>
+      </ResourceDescriptions>
+    </operation>
+  </operations>
+</delta>

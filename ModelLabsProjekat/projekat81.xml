@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:cim="http://iec.ch/TC57/2010/CIM-schema-cim15#"
+	xmlns:ftn="http://www.ftnydro.com/CIM15/2010/extension#">
+	<cim:DCLineSegment rdf:ID="dc1">
+		<cim:Conductor.length>12.3</cim:Conductor.length>
+		<cim:IdentifiedObject.aliasName>dc1</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>dc1</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>dc1</cim:IdentifiedObject.name>
+	</cim:DCLineSegment>
+	<cim:DCLineSegment rdf:ID="dc2">
+		<cim:Conductor.length >14.5</cim:Conductor.length>
+		<cim:IdentifiedObject.aliasName>dc2</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>dc2</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>dc2</cim:IdentifiedObject.name>
+	</cim:DCLineSegment>
+  <cim:ACLineSegment rdf:ID="ac1">
+    <cim:ACLineSegment.b0ch >24.6</cim:ACLineSegment.b0ch>
+    <cim:ACLineSegment.bch >30.5</cim:ACLineSegment.bch>
+    <cim:ACLineSegment.g0ch >50.7</cim:ACLineSegment.g0ch>
+    <cim:ACLineSegment.gch >45.2</cim:ACLineSegment.gch>
+     <cim:ACLineSegment.PerLengthImpedance rdf:resource="#plpi1"/>
+    <cim:ACLineSegment.r >22.3</cim:ACLineSegment.r>
+    <cim:ACLineSegment.r0 >80.5</cim:ACLineSegment.r0>
+    <cim:ACLineSegment.x >12.3</cim:ACLineSegment.x>
+    <cim:ACLineSegment.x0 >34.5</cim:ACLineSegment.x0>
+    <cim:Conductor.length >12.6</cim:Conductor.length>
+    <cim:IdentifiedObject.aliasName>ac1</cim:IdentifiedObject.aliasName>
+    <cim:IdentifiedObject.mRID>ac1</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>ac1</cim:IdentifiedObject.name>
+  </cim:ACLineSegment>
+  <cim:ACLineSegment rdf:ID="ac2">
+    <cim:ACLineSegment.b0ch >49.2</cim:ACLineSegment.b0ch>
+    <cim:ACLineSegment.bch >37.5</cim:ACLineSegment.bch>
+    <cim:ACLineSegment.g0ch >35.6</cim:ACLineSegment.g0ch>
+    <cim:ACLineSegment.gch >45.2</cim:ACLineSegment.gch>
+     <cim:ACLineSegment.PerLengthImpedance rdf:resource="#plpi2"/>
+    <cim:ACLineSegment.r >34.5</cim:ACLineSegment.r>
+    <cim:ACLineSegment.r0 >25.6</cim:ACLineSegment.r0>
+    <cim:ACLineSegment.x >12.3</cim:ACLineSegment.x>
+    <cim:ACLineSegment.x0 >54.2</cim:ACLineSegment.x0>
+    <cim:Conductor.length >45.6</cim:Conductor.length>
+    <cim:IdentifiedObject.aliasName>ac2</cim:IdentifiedObject.aliasName>
+    <cim:IdentifiedObject.mRID>ac2</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>ac2</cim:IdentifiedObject.name>
+  </cim:ACLineSegment>
+	<cim:SeriesCompensator rdf:ID="sc1">
+		<cim:SeriesCompensator.r>12.3</cim:SeriesCompensator.r>
+		<cim:SeriesCompensator.r0 >15.4</cim:SeriesCompensator.r0>
+		<cim:SeriesCompensator.x >13.2</cim:SeriesCompensator.x>
+		<cim:SeriesCompensator.x0 >16.5</cim:SeriesCompensator.x0>
+		<cim:IdentifiedObject.aliasName>sc1</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>sc1</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>sc1</cim:IdentifiedObject.name>
+	</cim:SeriesCompensator>
+	<cim:SeriesCompensator rdf:ID="sc2">
+		<cim:SeriesCompensator.r >15.6</cim:SeriesCompensator.r>
+		<cim:SeriesCompensator.r0>24.3</cim:SeriesCompensator.r0>
+		<cim:SeriesCompensator.x >27.8</cim:SeriesCompensator.x>
+		<cim:SeriesCompensator.x0 >35.6</cim:SeriesCompensator.x0>
+		<cim:IdentifiedObject.aliasName>sc2</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>sc2</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>sc2</cim:IdentifiedObject.name>
+	</cim:SeriesCompensator>
+	
+	
+	<cim:PerLengthPhaseImpedance rdf:ID="plpi1">
+		<cim:PerLengthPhaseImpedance.conductorCount>10</cim:PerLengthPhaseImpedance.conductorCount>
+		<cim:IdentifiedObject.aliasName>plpi1</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>plpi1</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>plpi1</cim:IdentifiedObject.name>
+	</cim:PerLengthPhaseImpedance>
+  <cim:PerLengthPhaseImpedance rdf:ID="plpi2">
+    <cim:PerLengthPhaseImpedance.conductorCount>20</cim:PerLengthPhaseImpedance.conductorCount>
+    <cim:IdentifiedObject.aliasName>plpi2</cim:IdentifiedObject.aliasName>
+    <cim:IdentifiedObject.mRID>plpi2</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>plpi2</cim:IdentifiedObject.name>
+  </cim:PerLengthPhaseImpedance>
+  <cim:PhaseImpedanceData rdf:ID="pi2">
+	<cim:PhaseImpedanceData rdf:ID="pi1">
+		<cim:PhaseImpedanceData.b >12.7</cim:PhaseImpedanceData.b>
+		<cim:PhaseImpedanceData.PhaseImpedance rdf:resource="#plpi1"/>
+		<cim:PhaseImpedanceData.r >45.3</cim:PhaseImpedanceData.r>
+		<cim:PhaseImpedanceData.sequenceNumber>15</cim:PhaseImpedanceData.sequenceNumber>
+		<cim:PhaseImpedanceData.x >13.342</cim:PhaseImpedanceData.x>
+		<cim:IdentifiedObject.aliasName>pi1</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>pi1</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>pi1</cim:IdentifiedObject.name>
+	</cim:PhaseImpedanceData>
+
+	
+		<cim:PhaseImpedanceData.b >12.5</cim:PhaseImpedanceData.b>
+		 <cim:PhaseImpedanceData.PhaseImpedance rdf:resource="#plpi2"/> 
+		<cim:PhaseImpedanceData.r >24.5</cim:PhaseImpedanceData.r>
+		<cim:PhaseImpedanceData.sequenceNumber>10</cim:PhaseImpedanceData.sequenceNumber>
+		<cim:PhaseImpedanceData.x >43.2</cim:PhaseImpedanceData.x>
+		<cim:IdentifiedObject.aliasName>pi2</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>pi2</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>pi2</cim:IdentifiedObject.name>
+	</cim:PhaseImpedanceData>
+	<cim:PerLengthSequenceImpedance rdf:ID="plsi1">
+		<cim:PerLengthSequenceImpedance.b0ch >7.5</cim:PerLengthSequenceImpedance.b0ch>
+		<cim:PerLengthSequenceImpedance.bch >14.7</cim:PerLengthSequenceImpedance.bch>
+		<cim:PerLengthSequenceImpedance.g0ch>19.7</cim:PerLengthSequenceImpedance.g0ch>
+		<cim:PerLengthSequenceImpedance.gch>15.6</cim:PerLengthSequenceImpedance.gch>
+		<cim:PerLengthSequenceImpedance.r >5.4</cim:PerLengthSequenceImpedance.r>
+		<cim:PerLengthSequenceImpedance.r0 >30.8</cim:PerLengthSequenceImpedance.r0>
+		<cim:PerLengthSequenceImpedance.x >25.7</cim:PerLengthSequenceImpedance.x>
+		<cim:PerLengthSequenceImpedance.x0 >40.5</cim:PerLengthSequenceImpedance.x0>
+		<cim:IdentifiedObject.aliasName>plsi1</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>plsi1</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>plsi1</cim:IdentifiedObject.name>
+	</cim:PerLengthSequenceImpedance>
+	<cim:PerLengthSequenceImpedance rdf:ID="plsi2">
+		<cim:PerLengthSequenceImpedance.b0ch >30.5</cim:PerLengthSequenceImpedance.b0ch>
+		<cim:PerLengthSequenceImpedance.bch >42.6</cim:PerLengthSequenceImpedance.bch>
+		<cim:PerLengthSequenceImpedance.g0ch >50.6</cim:PerLengthSequenceImpedance.g0ch>
+		<cim:PerLengthSequenceImpedance.gch >60.3</cim:PerLengthSequenceImpedance.gch>
+		<cim:PerLengthSequenceImpedance.r >15.3</cim:PerLengthSequenceImpedance.r>
+		<cim:PerLengthSequenceImpedance.r0 >20.3</cim:PerLengthSequenceImpedance.r0>
+		<cim:PerLengthSequenceImpedance.x >5.34</cim:PerLengthSequenceImpedance.x>
+		<cim:PerLengthSequenceImpedance.x0 >67.8</cim:PerLengthSequenceImpedance.x0>
+		<cim:IdentifiedObject.aliasName>plsi2</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>plsi2</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>plsi2</cim:IdentifiedObject.name>
+	</cim:PerLengthSequenceImpedance>
+  <cim:Terminal rdf:ID="t1">
+     <cim:Terminal.ConductingEquipment rdf:resource="#dc1"/> 
+    <cim:IdentifiedObject.aliasName>terminal1</cim:IdentifiedObject.aliasName>
+    <cim:IdentifiedObject.mRID>terminal1</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>terminal1</cim:IdentifiedObject.name>
+  </cim:Terminal>
+  <cim:Terminal rdf:ID="t2">
+    <cim:Terminal.ConductingEquipment rdf:resource="#dc2"/> 
+    <cim:IdentifiedObject.aliasName>terminal2</cim:IdentifiedObject.aliasName>
+    <cim:IdentifiedObject.mRID>terminal2</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>terminal2</cim:IdentifiedObject.name>
+  </cim:Terminal>
+
+
+</rdf:RDF>

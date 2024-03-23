@@ -1,0 +1,1405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://langdale.com.au/2005/Message#" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<head>
+<title>Profile Documentation</title>
+<style type="text/css">
+/* typography: fonts */
+body { font-family: arial, sans-serif; }
+
+.name, .type, .cardinality, .superclass, .xsdtype, .namespace { font-family: courier, monospace; }
+
+
+/* typography: emphasis */
+h1 { color: white; background: gray;}
+
+h2, h3 { color: gray; text-decoration: none;}
+
+h2.abstract, h2.enumerated, h2.domain {font-style: italic } 
+
+p.note { background-color: #ddd }
+
+p.declaration { color: gray }
+
+:link { color: purple; }
+
+.xsdtype { color: black; font-weight: bold; }
+
+.namespace { color: black }
+
+.package { font-size: x-large; color: gray }
+
+
+/* borders */
+div.group {
+	border-style: solid;
+	border-color: gray;
+	border-width: 1px;
+	
+}
+
+th, td {
+	border-top-style : solid;
+	border-top-width : 1px;
+	border-color: gray;
+ }
+
+
+/* spacing and alignment */
+body {padding: 5px; }
+
+h1 { padding: 5px;}
+
+div.group {
+	margin-top: 10px;
+	padding: 5px;
+	position: relative;
+}
+th, td {
+	text-align : left;
+	vertical-align : top;
+}
+th, td.type { width: 15em; overflow: visible; }
+
+p.cardinality { width: 4em; }
+
+p.package { position: absolute; right: 10px; top: 0px}				
+</style>
+</head>
+<body>
+<h1>Profile Documentation</h1>
+<p/>
+<p class="declaration">
+					Profile namespace:
+					<span class="namespace">http://iec.ch/TC57/2007/profile#</span>
+</p>
+<h1>Concrete Classes</h1>
+<div id="ACLineSegment" class="group">
+<a href="#ACLineSegment">
+<h2 class="concrete">ACLineSegment</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">A wire or combination of wires, with consistent electrical characteristics, building a single electrical system, used to carry alternating current between points in the power system.</p>
+<p class="comment">For symmetrical, transposed 3ph lines, it is sufficient to use  attributes of the line segment, which describe impedances and admittances for the entire length of the segment.  Additionally impedances can be computed by using length and associated per length impedances.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="ACLineSegment.b0ch">b0ch</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Susceptance">Susceptance</a>
+</p>
+</td>
+<td>
+<p class="comment">Zero sequence shunt (charging) susceptance, uniformly distributed, of the entire line section.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="ACLineSegment.bch">bch</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Susceptance">Susceptance</a>
+</p>
+</td>
+<td>
+<p class="comment">Positive sequence shunt (charging) susceptance, uniformly distributed, of the entire line section.  This value represents the full charging over the full length of the line.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="ACLineSegment.g0ch">g0ch</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Conductance">Conductance</a>
+</p>
+</td>
+<td>
+<p class="comment">Zero sequence shunt (charging) conductance, uniformly distributed, of the entire line section.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="ACLineSegment.gch">gch</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Conductance">Conductance</a>
+</p>
+</td>
+<td>
+<p class="comment">Positive sequence shunt (charging) conductance, uniformly distributed, of the entire line section.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="ACLineSegment.PerLengthImpedance">PerLengthImpedance</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#PerLengthImpedance">PerLengthImpedance</a>
+</p>
+</td>
+<td>
+<p class="comment">Per-length impedance of this line segment.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="ACLineSegment.r">r</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Resistance">Resistance</a>
+</p>
+</td>
+<td>
+<p class="comment">Positive sequence series resistance of the entire line section.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="ACLineSegment.r0">r0</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Resistance">Resistance</a>
+</p>
+</td>
+<td>
+<p class="comment">Zero sequence series resistance of the entire line section.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="ACLineSegment.x">x</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Reactance">Reactance</a>
+</p>
+</td>
+<td>
+<p class="comment">Positive sequence series reactance of the entire line section.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="ACLineSegment.x0">x0</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Reactance">Reactance</a>
+</p>
+</td>
+<td>
+<p class="comment">Zero sequence series reactance of the entire line section.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">length</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Length">Length</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Conductor.length">Conductor</a>
+</p>
+</td>
+</tr>
+</table>
+<table/>
+<table/>
+<table/>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="DCLineSegment" class="group">
+<a href="#DCLineSegment">
+<h2 class="concrete">DCLineSegment</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">A wire or combination of wires not insulated from one another, with consistent electrical characteristics, used to carry direct current between points in the DC region of the power system.</p>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">length</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Length">Length</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Conductor.length">Conductor</a>
+</p>
+</td>
+</tr>
+</table>
+<table/>
+<table/>
+<table/>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="PerLengthPhaseImpedance" class="group">
+<a href="#PerLengthPhaseImpedance">
+<h2 class="concrete">PerLengthPhaseImpedance</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">Impedance and admittance parameters per unit length for n-wire unbalanced lines, in matrix form.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="PerLengthPhaseImpedance.conductorCount">conductorCount</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">integer</p>
+</td>
+<td>
+<p class="comment">Number of phase, neutral, and other wires retained. Constrains the number of matrix elements and the phase codes that can be used with this matrix.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="PerLengthPhaseImpedance.PhaseImpedanceData">PhaseImpedanceData</p>
+</th>
+<td>
+<p class="cardinality">1..unbounded</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#PhaseImpedanceData">PhaseImpedanceData</a>
+</p>
+</td>
+<td>
+<p class="comment">All data that belong to this conductor phase impedance.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">ACLineSegments</p>
+</th>
+<td>
+<p class="cardinality">0..unbounded</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ACLineSegment">ACLineSegment</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#PerLengthImpedance.ACLineSegments">PerLengthImpedance</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="PerLengthSequenceImpedance" class="group">
+<a href="#PerLengthSequenceImpedance">
+<h2 class="concrete">PerLengthSequenceImpedance</h2>
+</a>
+<p class="package">IES_Projects</p>
+<p class="comment">Sequence impedance and admittance parameters per unit length, for transposed lines of 1, 2, or 3 phases. For 1-phase lines, define x=x0=xself. For 2-phase lines, define x=xs-xm and x0=xs+xm.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="PerLengthSequenceImpedance.b0ch">b0ch</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#SusceptancePerLength">SusceptancePerLength</a>
+</p>
+</td>
+<td>
+<p class="comment">Zero sequence shunt (charging) susceptance, per unit of length.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="PerLengthSequenceImpedance.bch">bch</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#SusceptancePerLength">SusceptancePerLength</a>
+</p>
+</td>
+<td>
+<p class="comment">Positive sequence shunt (charging) susceptance, per unit of length.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="PerLengthSequenceImpedance.g0ch">g0ch</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ConductancePerLength">ConductancePerLength</a>
+</p>
+</td>
+<td>
+<p class="comment">Zero sequence shunt (charging) conductance, per unit of length.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="PerLengthSequenceImpedance.gch">gch</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ConductancePerLength">ConductancePerLength</a>
+</p>
+</td>
+<td>
+<p class="comment">Positive sequence shunt (charging) conductance, per unit of length.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="PerLengthSequenceImpedance.r">r</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ResistancePerLength">ResistancePerLength</a>
+</p>
+</td>
+<td>
+<p class="comment">Positive sequence series resistance, per unit of length.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="PerLengthSequenceImpedance.r0">r0</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ResistancePerLength">ResistancePerLength</a>
+</p>
+</td>
+<td>
+<p class="comment">Zero sequence series resistance, per unit of length.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="PerLengthSequenceImpedance.x">x</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ReactancePerLength">ReactancePerLength</a>
+</p>
+</td>
+<td>
+<p class="comment">Positive sequence series reactance, per unit of length.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="PerLengthSequenceImpedance.x0">x0</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ReactancePerLength">ReactancePerLength</a>
+</p>
+</td>
+<td>
+<p class="comment">Zero sequence series reactance, per unit of length.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">ACLineSegments</p>
+</th>
+<td>
+<p class="cardinality">0..unbounded</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ACLineSegment">ACLineSegment</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#PerLengthImpedance.ACLineSegments">PerLengthImpedance</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="PhaseImpedanceData" class="group">
+<a href="#PhaseImpedanceData">
+<h2 class="concrete">PhaseImpedanceData</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">Triplet of resistance, reactance, and susceptance matrix element values.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="PhaseImpedanceData.sequenceNumber">sequenceNumber</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">integer</p>
+</td>
+<td>
+<p class="comment">Column-wise element index, assuming a symmetrical matrix. Ranges from 1 to N + N*(N-1)/2.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="PhaseImpedanceData.b">b</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#SusceptancePerLength">SusceptancePerLength</a>
+</p>
+</td>
+<td>
+<p class="comment">Susceptance matrix element value, per length of unit.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="PhaseImpedanceData.PhaseImpedance">PhaseImpedance</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#PerLengthPhaseImpedance">PerLengthPhaseImpedance</a>
+</p>
+</td>
+<td>
+<p class="comment">Conductor phase impedance to which this data belongs.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="PhaseImpedanceData.r">r</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ResistancePerLength">ResistancePerLength</a>
+</p>
+</td>
+<td>
+<p class="comment">Resistance matrix element value, per length of unit.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="PhaseImpedanceData.x">x</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ReactancePerLength">ReactancePerLength</a>
+</p>
+</td>
+<td>
+<p class="comment">Reactance matrix element value, per length of unit.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="SeriesCompensator" class="group">
+<a href="#SeriesCompensator">
+<h2 class="concrete">SeriesCompensator</h2>
+</a>
+<p class="package">IES_Projects</p>
+<p class="comment">A Series Compensator is a series capacitor or reactor or an AC transmission line without charging susceptance.  It is a two terminal device.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="SeriesCompensator.r">r</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Resistance">Resistance</a>
+</p>
+</td>
+<td>
+<p class="comment">Positive sequence resistance.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="SeriesCompensator.r0">r0</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Resistance">Resistance</a>
+</p>
+</td>
+<td>
+<p class="comment">Zero sequence resistance.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="SeriesCompensator.x">x</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Reactance">Reactance</a>
+</p>
+</td>
+<td>
+<p class="comment">Positive sequence reactance.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="SeriesCompensator.x0">x0</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Reactance">Reactance</a>
+</p>
+</td>
+<td>
+<p class="comment">Zero sequence reactance.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table/>
+<table/>
+<table/>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="Terminal" class="group">
+<a href="#Terminal">
+<h2 class="concrete">Terminal</h2>
+</a>
+<p class="package">Core</p>
+<p class="comment">An electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="Terminal.ConductingEquipment">ConductingEquipment</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ConductingEquipment">ConductingEquipment</a>
+</p>
+</td>
+<td>
+<p class="comment">The conducting equipment of the terminal.  Conducting equipment have  terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<h1>Abstract Classes</h1>
+<div id="ConductingEquipment" class="group">
+<a href="#ConductingEquipment">
+<h2 class="abstract">ConductingEquipment</h2>
+</a>
+<p class="package">IES_Projects</p>
+<p class="comment">The parts of the power system that are designed to carry current or that are conductively connected through terminals.</p>
+<h3>Inherited Members</h3>
+<table/>
+<table/>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="Conductor" class="group">
+<a href="#Conductor">
+<h2 class="abstract">Conductor</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">Combination of conducting material with consistent electrical characteristics, building a single electrical system, used to carry current between points in the power system.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="Conductor.length">length</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Length">Length</a>
+</p>
+</td>
+<td>
+<p class="comment">Segment length for calculating line section capabilities</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table/>
+<table/>
+<table/>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="Equipment" class="group">
+<a href="#Equipment">
+<h2 class="abstract">Equipment</h2>
+</a>
+<p class="package">IES_Projects</p>
+<p class="comment">The parts of a power system that are physical devices, electronic or mechanical.</p>
+<h3>Inherited Members</h3>
+<table/>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="IdentifiedObject" class="group">
+<a href="#IdentifiedObject">
+<h2 class="abstract">IdentifiedObject</h2>
+</a>
+<p class="package">Core</p>
+<p class="comment">This is a root class to provide common identification for all classes needing identification and naming attributes.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="IdentifiedObject.mRID">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">Master resource identifier issued by a model authority. The mRID is globally unique within an exchange context.</p>
+<p class="comment">Global uniqeness is easily achived by using a UUID for the mRID. It is strongly recommended to do this.</p>
+<p class="comment">For CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="IdentifiedObject.aliasName">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">The aliasName is free text human readable name of the object alternative to IdentifiedObject.name. It may be non unique and may not correlate to a naming hierarchy.</p>
+<p class="comment">The attribute aliasName is retained because of backwards compatibility between CIM relases. It is however recommended to replace aliasName with the Name class as aliasName is planned for retirement at a future time.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="IdentifiedObject.name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">The name is any free human readable and possibly non unique text naming the object.</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="PerLengthImpedance" class="group">
+<a href="#PerLengthImpedance">
+<h2 class="abstract">PerLengthImpedance</h2>
+</a>
+<p class="package">IES_Projects</p>
+<p class="comment">Common type for per-length impedance electrical catalogues.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="PerLengthImpedance.ACLineSegments">ACLineSegments</p>
+</th>
+<td>
+<p class="cardinality">0..unbounded</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ACLineSegment">ACLineSegment</a>
+</p>
+</td>
+<td>
+<p class="comment">All line segments described by this per-length impedance.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="PowerSystemResource" class="group">
+<a href="#PowerSystemResource">
+<h2 class="abstract">PowerSystemResource</h2>
+</a>
+<p class="package">Core</p>
+<p class="comment">A power system resource can be an item of equipment such as a switch, an equipment container containing many individual items of equipment such as a substation, or an organisational entity such as sub-control area. Power system resources can have measurements associated.</p>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<h1>Enumerations</h1>
+<h1>Compound Types</h1>
+<h1>Datatypes</h1>
+</body>
+</html>
